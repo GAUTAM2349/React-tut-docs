@@ -1,3 +1,68 @@
+* Always add package-lock.json in git repo
+* we NEVER push node_modules to git, because our package.json and package-lock.json have enough 
+  information to recreate node_modules.
+
+
+** parcel should be installed in development only and not in production
+   
+   npm install -D parcel
+        or
+   npm install --save-dev parcel    
+
+
+   ** patches -> these are the bug fixes in code and change very small logics and not variables inside a code for efficiency.
+   {
+  "dependencies": {
+    "react": "~17.0.1"
+  }
+}
+In this case, we're saying that we want to use version 17.0.1 of the react package, and we're willing to accept any version greater than or equal to 17.0.1 and less than 17.1.0. This allows us to receive patches and bug fixes, but not minor or major version changes.
+
+   minor updates -> The caret (^) is used to specify a "compatible with most recent" version range. This means that you're willing to accept any version of the package that is compatible with the version you specify, as long as it doesn't break compatibility with the major version.
+
+
+The caret (^) is used to specify a "compatible with most recent" version range. This means that you're willing to accept any version of the package that is compatible with the version you specify, as long as it doesn't break compatibility with the major version.
+
+{
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
+In this case, we're saying that we want to use version 4.17.20 of the lodash package, and we're willing to accept any version greater than or equal to 4.17.20 and less than 5.0.0. This allows us to receive patches, bug fixes, and minor version changes, but not major version changes.
+
+** SHA (used in intergerity url in package-lock.json---using this it keeps hash of version and matches it in) stands for Secure Hash Algorithm, a family of cryptographic hash functions used for securing data by converting it into a fixed-size string of characters, typically represented in hexadecimal format. SHA functions are widely used in cryptography and data integrity verification.
+
+How SHA Works
+Input: Any data (e.g., a file, a password, or a string).
+Process: The algorithm processes the input through a series of mathematical operations.
+Output: A fixed-size "hash" that uniquely represents the input data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 what is the use of bundlers like parcel, webpack
 
 ChatGPT said:

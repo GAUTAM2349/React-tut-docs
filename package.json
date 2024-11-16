@@ -1,0 +1,11 @@
+{
+  "name": "namaste-react---docs",
+  "version": "1.0.0",
+  "description": "what is the use of bundlers like parcel, webpack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
