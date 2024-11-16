@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+  </head>
+
+  <body>
+    <div id="root">Not rendered</div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  
+    <!-- if we keep this below or createElement or root.render the React not defined error will come. Order matters, which is implicit -->
+
+    <script>
+
+      const heading = React.createElement('h1',{},'gautam ','guddu ','baabu '); // to create elements
+      // at the end createElement is just a method defined inside React object, it takes some argument and based on that it returns an
+      // element(object)
+      // the second parameter is used to give attributes to elements, but note that attributes name are not in html format
+      // but in js, bcz write now u are setting values of javascript pre-defined objects and not writing html directly.
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));  // root is the place where react runs.
+      // The createRoot method is part of the React 18+ API and is used to initialize and manage a React //application on the DOM. It is a replacement for the older ReactDOM.render method, designed to support concurrent rendering and improve app performance.
+
+      root.render(heading);  // what this render does is nothing but to just inject the 'heading' or any other react element by converting it to proper html element
+      //based on properties of that object, which eventually is based on what arguments, we passed to React.createElement().
+
+    </script>
+  </body>
+</html>
