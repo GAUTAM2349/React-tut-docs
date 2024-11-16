@@ -6,11 +6,6 @@
     <title>Document</title>
     <script src="app.js" type="module"></script>
     
-    <!-- The type="module" attribute in the <script> tag is used to tell the browser that the JavaScript code within the script file is ES Module code, which enables the use of modules in javascript code. So it tells js file that you will
-      be getting something to deal where import export is used to write code. Also u can also use them for modular code 
-      writing.
-      
-      Scripts with type="module" are deferred by default. This means that the browser will download the script and execute it only after the HTML is parsed, similar to defer behavior in traditional scripts.-->
    
   </head>
 
@@ -19,23 +14,6 @@
 
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
-     <!--first commit  -->
-    <!-- if we keep this below or createElement or root.render the React not defined error will come. Order matters, which is implicit
-
-    <script>
-
-      const heading = React.createElement('h1',{},'gautam ','guddu ','baabu '); // to create elements
-      // at the end createElement is just a method defined inside React object, it takes some argument and based on that it returns an
-      // element(object)
-      // the second parameter is used to give attributes to elements, but note that attributes name are not in html format
-      // but in js, bcz write now u are setting values of javascript pre-defined objects and not writing html directly.
-
-      const root = ReactDOM.createRoot(document.getElementById('root'));  // root is the place where react runs.
-      // The createRoot method is part of the React 18+ API and is used to initialize and manage a React //application on the DOM. It is a replacement for the older ReactDOM.render method, designed to support concurrent rendering and improve app performance.
-
-      root.render(heading);  // what this render does is nothing but to just inject the 'heading' or any other react element by converting it to proper html element
-      //based on properties of that object, which eventually is based on what arguments, we passed to React.createElement().
-
-    </script> -->
-  </body>
+    
+      </body>
 </html>
