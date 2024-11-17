@@ -2,7 +2,6 @@
   "name": "namaste-react---docs",
   "version": "1.0.0",
   "description": "what is the use of bundlers like parcel, webpack",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +13,8 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "process": "^0.11.10"
   }
 }

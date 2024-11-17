@@ -5,13 +5,3 @@ dist/
 
 
 
-
-# When / is placed at the end (.vscode/):
-
-#The trailing slash (/) means the directory itself.
-#.vscode/ tells Git to ignore the entire .vscode directory and its contents, regardless of where it is located in the project directory structure.
-
-# When / is placed at the beginning (/vscode):
-
-# The leading slash (/) means that the path should be relative to the root of the repository.
-# /vscode would mean only the vscode directory in the root directory of the project, not anywhere inside subdirectories.
